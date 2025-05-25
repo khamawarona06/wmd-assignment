@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Big Back Inn</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="110px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="menu.html">Our Menu |</a></li>
+                        <li><a href="background.html">Origin Story |</a></li>
+                        <li><a href="contact.html">Contact Us |</a></li>
+                        <li><a href="location.html">Find Us |</a></li>
+                        <li><a href="merch.html">Merchandise </a></li>
+                    </ul>
+                </nav>
+                <div class="menu--icons">
+                  <div class="cart-icon">
+                    <i class="fa fa-shopping-basket"></i>
+                    <span>0</span>
+                  </div>
+                </div>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+          <header>
+            <h1>Welcome to Big Back Inn</h1>
+            <p>Fork Yeah! Deliciousness in Every Bite!</p>
+          </header>
+        
+          <div class="container">
+            <section>
+              <h2>Our Story: The Big Back Inn Legacy</h2>
+              <p>Welcome to <strong>Big Back Inn</strong>, where flavor meets nostalgia and comfort food reigns supreme. Our story began with a simple idea: to bring back the joy of hearty, honest meals that feel like home—served fast, fresh, and always with a smile.</p>
+            </section>
+        
+            <section>
+              <h2>How It All Started</h2>
+              <p>Back in 1998, in a small Midwestern town with more grain silos than stoplights, our founder, Mason “Big Mac” Beckett, had a dream. A former trucker with a big appetite and a bigger heart, Mason wanted to create a place where anyone—from long-haul drivers to local families—could find satisfying food and warm hospitality at a fair price.</p>
+              <p>He converted an old roadside inn—nicknamed the “Big Back Inn” by locals—into a cozy, no-frills eatery. What started with burgers, hand-cut fries, and creamy shakes quickly became a local legend.</p>
+            </section>
+        
+            <section>
+              <h2>Our Purpose</h2>
+              <p>At Big Back Inn, we're on a mission to bring back the good stuff—classic comfort food made with real ingredients, served in a place that feels like you’ve been there a hundred times, even if it’s your first visit. We believe in food that fills you up, not just your stomach, but your soul too.</p>
+            </section>
+        
+            <section>
+              <h2>What We Stand For</h2>
+              <div class="highlight">
+                <p><strong>Quality Without Pretension:</strong> Fresh-made burgers, hand-cut fries, and thick milkshakes—simple, real, and satisfying.</p>
+              </div>
+              <div class="highlight">
+                <p><strong>Community First:</strong> We support local farms, hire locally, and serve each guest like family—just how Mason would've wanted it.</p>
+              </div>
+              <div class="highlight">
+                <p><strong>Old-School Service, New-School Speed:</strong> Fast food, slow values—that’s the Big Back way.</p>
+              </div>
+            </section>
+        
+            <section>
+              <p><strong>Come hungry. Leave happy. And remember: at Big Back Inn, we've always got your back.</strong></p>
+            </section>
+          </div>
+          <div class="testimonial">
+            <div class="small container">
+              <div class="row">
+                <div class="col-3">
+                  <i class="fa fa-quote-left"></i>
+                  <p>Big Back Inn takes me straight back to Sunday dinners at grandma's—except faster and with better fries. Absolutely love the vibe and the food!</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <img src="images/user1.JPG">
+                  <h3>Jamie L.</h3>
+                </div>
+                <div class="col-3">
+                  <i class="fa fa-quote-left"></i>
+                  <p>Big Back Inn blew me away! The burgers are juicy, the wings are perfectly crispy, and the loaded fries? Unreal. I'm definitely coming back — and bringing friends!</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <img src="images/user2.jpg">
+                  <h3>Hazel M.</h3>
+                </div>
+                <div class="col-3">
+                  <i class="fa fa-quote-left"></i>
+                  <p>Hands down the best comfort food in town! Big Back Inn has the friendliest staff and flavors that hit the spot every time</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                  <img src="images/user3.png">
+                  <h3>Dolly F.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            var MenuItems = document.getElementById("MenuItems");
+    
+            MenuItems.style.maxHeight = "0px";
+    
+            function menutoggle(){
+              if(MenuItems.style.maxHeight == "0px")
+            {
+              MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+              MenuItems.style.maxHeight = "0px";
+            }
+            }
+          </script>
+          <footer>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 20px; background: #ffdb58; color: #000000;">
+              <div style="flex: 1 1 250px; margin-bottom: 20px;">
+                <h3 style="margin-bottom: 10px;">Big Back Inn</h3>
+                <p>Fork Yeah! Deliciousness in Every Bite! Proudly serving comfort food since 1998.</p>
+              </div>
+          
+              <div style="flex: 1 1 150px; margin-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Quick Links</h4>
+                <ul style="list-style: none; padding-left: 0;">
+                  <li><a href="index.html" style="color: #000000; text-decoration: none;">Home</a></li>
+                  <li><a href="menu.html" style="color: #000000; text-decoration: none;">Our Menu</a></li>
+                  <li><a href="background.html" style="color: #000000; text-decoration: none;">Origin Story</a></li>
+                  <li><a href="contact.html" style="color: #000000; text-decoration: none;">Contact Us</a></li>
+                  <li><a href="location.html" style="color: #000000; text-decoration: none;">Find Us</a></li>
+                  <li><a href="merch.html" style="color: #000000; text-decoration: none;">Merchandise</a></li>
+                </ul>
+              </div>
+          
+              <div style="flex: 1 1 200px; margin-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Contact Us</h4>
+                <p>Email: <a href="mailto:hello@bigbackinn.com" style="color: #000000;">hello@bigbackinn.com</a></p>
+                <p>Phone: (555) 123-4567</p>
+                <p>123 Route 66, Diner Town, USA</p>
+              </div>
+          
+              <div style="flex: 1 1 200px; margin-bottom: 20px;">
+                <h4 style="margin-bottom: 10px;">Hours</h4>
+                <p>Mon–Fri: 10am – 10pm</p>
+                <p>Sat–Sun: 9am – 11pm</p>
+              </div>
+            </div>
+          
+            <div style="text-align: center; padding: 10px; background: #ffffff; font-size: 0.9rem;">
+              &copy; 2025 Big Back Inn. All rights reserved. | Follow us:
+              <a href="#" style="color: #000000; text-decoration: none; margin-left: 5px;">Facebook</a> • 
+              <a href="#" style="color: #000000; text-decoration: none;">Instagram</a> • 
+              <a href="#" style="color: #000000; text-decoration: none;">Twitter</a>
+            </div>
+          </footer>
+        </body>
+        </html>

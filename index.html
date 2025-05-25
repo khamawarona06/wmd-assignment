@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Big Back Inn</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="110px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="menu.html">Our Menu |</a></li>
+                        <li><a href="background.html">Origin Story |</a></li>
+                        <li><a href="contact.html">Contact Us |</a></li>
+                        <li><a href="location.html">Find Us |</a></li>
+                        <li><a href="merch.html">Merchandise </a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Feed Your Cravings!</h1>
+                    <p>Fork Yeah! Deliciousness in Every Bite!</p>
+                    <a href="menu.html" class="btn">I'm Starving &#8594;</a>
+                </div>
+                <div class=".col-2">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="small-conatiner">
+      <h2 class="title">Featured Foods</h2>
+      <div class="inventory-grid">
+        <div class="row">
+        <div class="col-3">
+          <img src="food/jalapenobomb.jpg">
+          <a href="menu.html"><h4>Big Fat Burgers</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="col-3">
+          <img src="food/cauliflowerwings.jpg">
+          <a href="menu.html"><h4>Juzy Wings</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+        <div class="col-3">
+          <img src="food/loadedtower.jpg">
+          <a href="menu.html"><h4>Fries Galores</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+                </div> 
+    <footer>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 40px 20px; background: #ffdb58; color: #000000;">
+          <div style="flex: 1 1 250px; margin-bottom: 20px;">
+            <h3 style="margin-bottom: 10px;">Big Back Inn</h3>
+            <p>Fork Yeah! Deliciousness in Every Bite! Proudly serving comfort food since 1998.</p>
+          </div>
+      
+          <div style="flex: 1 1 150px; margin-bottom: 20px;">
+            <h4 style="margin-bottom: 10px;">Quick Links</h4>
+            <ul style="list-style: none; padding-left: 0;">
+              <li><a href="index.html" style="color: #000000; text-decoration: none;">Home</a></li>
+              <li><a href="menu.html" style="color: #000000; text-decoration: none;">Our Menu</a></li>
+              <li><a href="background.html" style="color: #000000; text-decoration: none;">Origin Story</a></li>
+              <li><a href="contact.html" style="color: #000000; text-decoration: none;">Contact Us</a></li>
+              <li><a href="location.html" style="color: #000000; text-decoration: none;">Find Us</a></li>
+              <li><a href="merch.html" style="color: #000000; text-decoration: none;">Merchandise</a></li>
+            </ul>
+          </div>
+      
+          <div style="flex: 1 1 200px; margin-bottom: 20px;">
+            <h4 style="margin-bottom: 10px;">Contact Us</h4>
+            <p>Email: <a href="mailto:hello@bigbackinn.com" style="color: #000000;">hello@bigbackinn.com</a></p>
+            <p>Phone: (555) 123-4567</p>
+            <p>123 Route 66, Diner Town, USA</p>
+          </div>
+      
+          <div style="flex: 1 1 200px; margin-bottom: 20px;">
+            <h4 style="margin-bottom: 10px;">Hours</h4>
+            <p>Mon–Fri: 10am – 10pm</p>
+            <p>Sat–Sun: 9am – 11pm</p>
+          </div>
+        </div>
+      
+        <div style="text-align: center; padding: 10px; background: #ffffff; font-size: 0.9rem;">
+          &copy; 2025 Big Back Inn. All rights reserved. | Follow us:
+          <a href="#" style="color: #000000; text-decoration: none; margin-left: 5px;">Facebook</a> • 
+          <a href="#" style="color: #000000; text-decoration: none;">Instagram</a> • 
+          <a href="#" style="color: #000000; text-decoration: none;">Twitter</a>
+        </div>
+      </footer>
+      <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+          if(MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "0px";
+        }
+        }
+      </script>
+         
+    </body>
+</html>

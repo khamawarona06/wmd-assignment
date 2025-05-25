@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Big Back Inn</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="110px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home |</a></li>
+                        <li><a href="menu.html">Our Menu |</a></li>
+                        <li><a href="background.html">Origin Story |</a></li>
+                        <li><a href="contact.html">Contact Us |</a></li>
+                        <li><a href="location.html">Find Us |</a></li>
+                        <li><a href="merch.html">Merchandise </a></li>
+                    </ul>
+                </nav>
+                <div class="menu--icons">
+                  <div class="cart-icon">
+                    <i class="fa fa-shopping-basket"></i>
+                    <span>0</span>
+                  </div>
+                </div>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+  <div class="menu-container">
+    <h1>Big Back Inn Menu</h1>
+
+    <div class="filter-buttons">
+      <button onclick="filterMenu('burgers')">Burgers</button>
+      <button onclick="filterMenu('wings')">Wings</button>
+      <button onclick="filterMenu('fries')">Fries</button>
+    </div>
+
+    <!-- Burgers Section -->
+    <div class="menu-section active" id="burgers">
+      <h2>Burgers</h2>
+      <div class="menu-item">
+        <img src="food/smokeybacon.jpeg">
+        <div class="item-info">
+          <div class="item-name">Classic Smoke Bacon</div>
+          <div class="item-description">Beef patty, bacon, lettuce, tomato, onion, pickles, and house peri sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 120.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/bbqxperidouble.jpg">
+        <div class="item-info">
+          <div class="item-name">BBQXPERI DOUBLE</div>
+          <div class="item-description">Two patties, cheddar cheese, lettuce, tomato, BBQ sauce, Peri Sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 290.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/sauceoverload.jpg">
+        <div class="item-info">
+          <div class="item-name">Sauce Overload</div>
+          <div class="item-description">Beef patty, lettuce, tomato, onion, pickles, any three house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 244.90</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/jalapenobomb.jpg">
+        <div class="item-info">
+          <div class="item-name">Jalapeño Bomb</div>
+          <div class="item-description">Beef patty, lettuce, Jalapeño,  tomato, onion, pickles, and house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 300.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/cheesydouble.jpg">
+        <div class="item-info">
+          <div class="item-name">Cheesy Double Patty</div>
+          <div class="item-description">Two Beef patties, lettuce, cheese, tomato, onion, pickles, and house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 500.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/c-snitzel.jpg">
+        <div class="item-info">
+          <div class="item-name">Chicken Snitzel Burger</div>
+          <div class="item-description">Chicken patty coated in panko crumbs, lettuce, tomato, pickles, and house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 600.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/colaburst.jpg">
+        <div class="item-info">
+          <div class="item-name">Cola Burst</div>
+          <div class="item-description">Beef patty, lettuce, coke, tomato, onion, pickles, and house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 342.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/fatking.jpg">
+        <div class="item-info">
+          <div class="item-name">Fat King</div>
+          <div class="item-description">Stuffed double Beef patty, lettuce, tomato, pickles, and house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 400.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/oldsoul.jpg">
+        <div class="item-info">
+          <div class="item-name">Old Soul</div>
+          <div class="item-description">Beef patty, lettuce, tomato, blue cheese, pickles, and aged cheese.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 354.06</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/smokeybacon.jpg">
+        <div class="item-info">
+          <div class="item-name">XL Smokey Bacon</div>
+          <div class="item-description">Beef patty, lettuce, tomato, bacon, pickles, and extra house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 134.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/tortillatorpedo.jpg">
+        <div class="item-info">
+          <div class="item-name">Tortilla Torpedo</div>
+          <div class="item-description">Beef patty, lettuce, tomato, nacho tortilla, pickles, and house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 342.45</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/volcanoeplosion.jpg">
+        <div class="item-info">
+          <div class="item-name">Volcano Explosion</div>
+          <div class="item-description">Beef patty, lettuce, tomato, onion, pickles, chilli powder and house sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 543.65</div>
+      </div>
+    </div>
+
+    <!-- Wings Section -->
+    <div class="menu-section" id="wings">
+      <h2>Wings</h2>
+      <div class="menu-item">
+        <img src="food/bbqcrunch.jpg">
+        <div class="item-info">
+          <div class="item-name">BBQ Crunch</div>
+          <div class="item-description">Spicy buffalo sauce over crispy wings. Served with ranch.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 78.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/cauliflowerwings.jpg">
+        <div class="item-info">
+          <div class="item-name">Cauliflower Wings</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 765.99</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/extrameat.jpeg">
+        <div class="item-info">
+          <div class="item-name">Extra Meat</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 834.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/flaminhot.jpg">
+        <div class="item-info">
+          <div class="item-name">Flamin' Hot</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 67.88</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/hotbbq.jpg">
+        <div class="item-info">
+          <div class="item-name">Hot BBQ Wings</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 21.23</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/mofire.jpg">
+        <div class="item-info">
+          <div class="item-name">MoFire</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 78.66</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/pepperbomb.jpg">
+        <div class="item-info">
+          <div class="item-name">Pepper Bomb</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 52.45</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/plainspice.jpg">
+        <div class="item-info">
+          <div class="item-name">Plain Spice Wings</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 67.96</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/sesamesauce.jpeg">
+        <div class="item-info">
+          <div class="item-name">Sesame Sauce</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 43.66</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/sunexplosion.jpg">
+        <div class="item-info">
+          <div class="item-name">Sun Explosion</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 12.98</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/sweet&sour.jpg">
+        <div class="item-info">
+          <div class="item-name">Sweet And Sour Wings</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 231.98</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/lemonpepper.jpg">
+        <div class="item-info">
+          <div class="item-name">Lemon Pepper Wings</div>
+          <div class="item-description">Sweet and smoky wings glazed in honey BBQ sauce.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 780.00</div>
+      </div>
+    </div>
+    
+
+    <!-- Fries Section -->
+    <div class="menu-section" id="fries">
+      <h2>Fries</h2>
+      <div class="menu-item">
+        <img src="food/plainjane.jpg">
+        <div class="item-info">
+          <div class="item-name">Plain Jane Fries</div>
+          <div class="item-description">Fresh-cut, crispy and lightly seasoned.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 3.40</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/parm.jpg">
+        <div class="item-info">
+          <div class="item-name">Parmesean Fries</div>
+          <div class="item-description">Smothered with parmesean and light seasoning.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 1.99</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/saucystack.jpg">
+        <div class="item-info">
+          <div class="item-name">Saucy Stack</div>
+          <div class="item-description">Fresh-cut, crispy and lightly seasoned.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 778.98</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/extraspicy.jpg">
+        <div class="item-info">
+          <div class="item-name">Extra Spicy</div>
+          <div class="item-description">Fresh-cut, crispy and lightly seasoned.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 98.78</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/cheesystack.jpg">
+        <div class="item-info">
+          <div class="item-name">Cheesy Stack</div>
+          <div class="item-description">Fresh-cut, crispy and lightly seasoned.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 89.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/animalstyle.jpg">
+        <div class="item-info">
+          <div class="item-name">Animal Style</div>
+          <div class="item-description">Fresh-cut, crispy and lightly seasoned.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 80.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/heavyload.jpg">
+        <div class="item-info">
+          <div class="item-name">Heavy Load</div>
+          <div class="item-description">Fresh-cut, crispy and lightly seasoned.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 87.00</div>
+      </div>
+      <div class="menu-item">
+        <img src="food/loadedtower.jpg">
+        <div class="item-info">
+          <div class="item-name">Loaded Tower</div>
+          <div class="item-description">Fresh-cut, crispy and lightly seasoned.</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="item-price">P 89.00</div>
+      </div>
+    </div>
+  </div>
+
+<!--order section starts-->
+
+<section class="order" id="order">
+
+  <h3 class="sub-heading">Order Now</h3>
+  <h1 class="heading">Free and Fast</h1>
+
+    <div class="inputBox">
+      <form action="https://api.web3forms.com/Order Now" method="POST"class="inputBox">
+        <input type="hidden" name="access_key" value="61d1f132-621a-41ca-b785-829a3f9ec358">
+      <div class="input">
+        <span>Your name</span>
+        <input type="text" placeholder="enter your name">
+      </div>
+      <div class="input">
+        <span>Your number</span>
+        <input type="number" placeholder="enter food number">
+      </div>
+      <div class="input">
+        <span>Your order</span>
+        <input type="text" placeholder="enter food name">
+      </div>
+      <div class="input">
+        <span>Additions</span>
+        <input type="text" placeholder="extra food">
+      </div>
+      <div class="input">
+        <span>How much</span>
+        <input type="number" placeholder="how many items">
+      </div>
+      <div class="input">
+        <span>Date and time</span>
+        <input type="datetime-local">
+      </div>
+      <div class="input">
+        <span>Your address</span>
+        <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="input">
+        <span>Your messages</span>
+        <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <input type="submit" value="Order Now" class="btn">
+      </form>
+</section>
+<!--order section ends-->
+
+
+
+  <script>
+    function filterMenu(category) {
+      const sections = document.querySelectorAll('.menu-section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+        if (section.id === category) {
+          section.classList.add('active');
+        }
+      });
+    }
+  </script>
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+    {
+      MenuItems.style.maxHeight = "200px";
+    }
+    else
+    {
+      MenuItems.style.maxHeight = "0px";
+    }
+    }
+  </script>
+            <footer>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 40px 20px; background: #ffdb58; color: #000000;">
+                  <div style="flex: 1 1 250px; margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 10px;">Big Back Inn</h3>
+                    <p>Fork Yeah! Deliciousness in Every Bite! Proudly serving comfort food since 1998.</p>
+                  </div>
+              
+                  <div style="flex: 1 1 150px; margin-bottom: 20px;">
+                    <h4 style="margin-bottom: 10px;">Quick Links</h4>
+                    <ul style="list-style: none; padding-left: 0;">
+                      <li><a href="index.html" style="color: #000000; text-decoration: none;">Home</a></li>
+                      <li><a href="menu.html" style="color: #000000; text-decoration: none;">Our Menu</a></li>
+                      <li><a href="background.html" style="color: #000000; text-decoration: none;">Origin Story</a></li>
+                      <li><a href="contact.html" style="color: #000000; text-decoration: none;">Contact Us</a></li>
+                      <li><a href="location.html" style="color: #000000; text-decoration: none;">Find Us</a></li>
+                      <li><a href="merch.html" style="color: #000000; text-decoration: none;">Merchandise</a></li>
+                    </ul>
+                  </div>
+              
+                  <div style="flex: 1 1 200px; margin-bottom: 20px;">
+                    <h4 style="margin-bottom: 10px;">Contact Us</h4>
+                    <p>Email: <a href="mailto:hello@bigbackinn.com" style="color: #000000;">hello@bigbackinn.com</a></p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>123 Route 66, Diner Town, USA</p>
+                  </div>
+              
+                  <div style="flex: 1 1 200px; margin-bottom: 20px;">
+                    <h4 style="margin-bottom: 10px;">Hours</h4>
+                    <p>Mon–Fri: 10am – 10pm</p>
+                    <p>Sat–Sun: 9am – 11pm</p>
+                  </div>
+                </div>
+              
+                <div style="text-align: center; padding: 10px; background: #ffffff; font-size: 0.9rem;">
+                  &copy; 2025 Big Back Inn. All rights reserved. | Follow us:
+                  <a href="#" style="color: #000000; text-decoration: none; margin-left: 5px;">Facebook</a> • 
+                  <a href="#" style="color: #000000; text-decoration: none;">Instagram</a> • 
+                  <a href="#" style="color: #000000; text-decoration: none;">Twitter</a>
+                </div>
+              </footer>
+        </body>
+        </html>
